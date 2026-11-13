@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>VitalWork · Nos mudamos</title>
+<script>
+/* Las direcciones antiguas de github.io llevan a los dominios nuevos,
+   conservando la página y los datos (p. ej. verificar.html?codigo=...).
+   Así los QR de los certificados ya entregados siguen funcionando. */
+(function () {
+  var p = location.pathname, resto = location.search + location.hash, m;
+  if ((m = p.match(/^\/nexus-learning\/?(.*)$/i))) location.replace("https://learning.vitalwork.ec/" + m[1] + resto);
+  else if ((m = p.match(/^\/Nexus\/?(.*)$/i))) location.replace("https://nexus.vitalwork.ec/" + m[1] + resto);
+  else location.replace("https://nexus.vitalwork.ec/");
+})();
+</script></head>
+<body style="font-family:Arial,sans-serif;text-align:center;padding:40px">
+<p>Nos mudamos a <a href="https://nexus.vitalwork.ec/">nexus.vitalwork.ec</a> y
+<a href="https://learning.vitalwork.ec/">learning.vitalwork.ec</a>. Redirigiendo…</p>
+</body></html>
